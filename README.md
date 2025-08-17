@@ -1,6 +1,6 @@
 ## Overview
 
-This project is a Laravel application styled with Tailwind CSS. It integrates with the NewsData.io API to display technology news and uses Firebase Authentication for user login and registration. Automated updates are handled by Artisan commands, Bash scripts, and cron jobs. CI/CD is set up with GitHub Actions for linting and deployment.
+Laravel app for Tech Article posting styled with Tailwind CSS. It integrates with the NewsData.io API to display tech news and uses Firebase Authentication for user login and registration. Automated news updates are handled by an Artisan command and a cron job. CI/CD is set up with GitHub Actions for linting and deployment.
 
 ## Technologies
 
