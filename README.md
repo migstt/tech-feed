@@ -1,20 +1,23 @@
-# Visit [mtrinidad.ronins.site](http://mtrinidad.ronins.site) to explore the Tech Journal app in action.
+## Overview
 
+This project is a Laravel application styled with Tailwind CSS. It integrates with the NewsData.io API to display technology news and uses Firebase Authentication for user login and registration. Automated updates are handled by Artisan commands, Bash scripts, and cron jobs. CI/CD is set up with GitHub Actions for linting and deployment.
 
-# Tech Journal App
+## Technologies
 
-Tech Journal is a Laravel web application designed for tech enthusiasts to journal their thoughts, ideas, and experiences. The app is styled using Tailwind CSS and incorporates the Toast UI Editor for Markdown. It also integrates the NewsData.io API to provide real-time access to the latest tech news.
+- Laravel
+- Tailwind CSS
+- Firebase Authentication
+- NewsData.io API
+- Artisan commands
+- Bash + cron (automated updates)
+- GitHub Actions (CI/CD)
 
-## Features
+## Deployment
 
-- **Markdown Journaling:** Use the Toast UI Editor to write and format your tech journal entries with ease.
+- CI/CD pipeline runs linting and deployment steps via GitHub Actions.
+- Cron jobs trigger automated news updates through Artisan commands.
 
-- **Real-time Tech News:** Stay up-to-date with the latest tech news through integration with the NewsData.io API.
+## Notes
 
-- **Automated Tech News Fetching:**
-  - Created an artisan command to fetch tech news every 2 days.
-  - The command is executed with a bash script on a cron job, ensuring timely updates.
-
-- **Backup and Cron Jobs:** Secure your data with shell scripts for MySQL and app backups. Configure server and local cron jobs for automatic execution and synchronization.
-
-- **CI/CD with GitHub Actions:** Implement continuous integration and continuous deployment using GitHub Actions. Automate PHPUnit testing, PHPStan code linting, and deployment to shared hosting.
+- API keys for NewsData.io must be configured in the environment file.  
+- Firebase Authentication requires proper setup of Firebase project credentials.
